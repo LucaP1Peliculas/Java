@@ -40,7 +40,7 @@ public static ArrayList<Pelicula> mostararPeli(){
         try {
             
             con = DriverManager.getConnection(url, user, password);
-            pst = con.prepareStatement("SELECT * FROM Peliculas");
+            pst = con.prepareStatement("SELECT * FROM Pelicula");
             rs = pst.executeQuery();
 
             while (rs.next()) {
