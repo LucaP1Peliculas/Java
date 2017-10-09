@@ -1,4 +1,5 @@
-package model;
+package Peliculas;
+
 
 public class Pelicula 
 {
@@ -10,6 +11,7 @@ public class Pelicula
 	private int _duracion;
 	private String _sinopsis;
 	private String _rutaImagen;
+	private String _rutaImagen2;
 	private int _precioCompra;
 	private int _precioAlquiler;
 	
@@ -94,7 +96,13 @@ public class Pelicula
 	public void set_rutaImagen(String _rutaImagen) {
 		this._rutaImagen = _rutaImagen;
 	}
+	public String get_rutaImagen2() {
+		return _rutaImagen2;
+	}
 
+	public void set_rutaImagen2(String _rutaImagen2) {
+		this._rutaImagen2 = _rutaImagen2;
+	}
 	public int get_precioCompra() {
 		return _precioCompra;
 	}
@@ -110,6 +118,24 @@ public class Pelicula
 	public void set_precioAlquiler(int _precioAlquiler) {
 		this._precioAlquiler = _precioAlquiler;
 	}
+
+	public Pelicula(String _titulo, int _id, String _genero, String _director, int _año, int _duracion,
+			String _sinopsis, String _rutaImagen, String _rutaImagen2, int _precioCompra, int _precioAlquiler) {
+		super();
+		this._titulo = _titulo;
+		this._id = _id;
+		this._genero = _genero;
+		this._director = _director;
+		this._año = _año;
+		this._duracion = _duracion;
+		this._sinopsis = _sinopsis;
+		this._rutaImagen = _rutaImagen;
+		this._rutaImagen2 = _rutaImagen2;
+		this._precioCompra = _precioCompra;
+		this._precioAlquiler = _precioAlquiler;
+	}
+
+
 	
 	
 }
